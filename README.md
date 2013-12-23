@@ -10,9 +10,9 @@ and add the following
 
 ```json
 {
-  [
-    'folders': {...}
-  ]
+  'folders':[
+    {...}
+  ],
   'settings': {
     'opengit':'http://yourgitlabrepo.com'
   }
