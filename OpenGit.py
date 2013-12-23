@@ -17,7 +17,7 @@ class opengitCommand(sublime_plugin.TextCommand):
 	def getBranch(self):
 		p = subprocess.Popen('git branch --no-color|grep "^* "', stdout=subprocess.PIPE, shell=True)
 		(output,error) = p.communicate()
-		branch = re.search('^\* (\w+)',output.decode('utf-8'))
+		branch = re.search('^\* (\w+((/\w+)*)?)',output.decode('utf-8'))
 		return ''.join(branch.group(1).split('\n'))
 
 	def getOrigin(self):
