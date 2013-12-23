@@ -14,7 +14,7 @@ and add the following
     {...}
   ],
   "settings": {
-    "opengit":"http://yourgitlabrepo.com"
+    "gitlab_url":"http://yourgitlabrepo.com"
   }
 }
 ```
